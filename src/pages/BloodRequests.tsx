@@ -68,19 +68,84 @@ const BloodRequests = () => {
       deadline: "2024-03-16T23:59:59Z",
       pledges: 3
     },
-    {
-      id: "4",
-      hospitalName: "Regional Medical Center",
-      bloodGroup: "AB+",
-      city: "Houston",
-      unitsNeeded: 3,
-      unitsFulfilled: 1,
-      urgencyLevel: "low",
-      status: "pending",
-      createdAt: "2024-03-14T09:45:00Z",
-      deadline: "2024-03-20T23:59:59Z",
-      pledges: 1
-    }
+      {
+        id: "4",
+        hospitalName: "Regional Medical Center",
+        bloodGroup: "AB+",
+        city: "Houston",
+        unitsNeeded: 3,
+        unitsFulfilled: 1,
+        urgencyLevel: "low",
+        status: "pending",
+        createdAt: "2024-03-14T09:45:00Z",
+        deadline: "2024-03-20T23:59:59Z",
+        pledges: 1
+      },
+      {
+        id: "5",
+        hospitalName: "Children's Medical Center",
+        bloodGroup: "O+",
+        city: "Miami",
+        unitsNeeded: 15,
+        unitsFulfilled: 12,
+        urgencyLevel: "critical",
+        status: "pending",
+        createdAt: "2024-03-16T06:30:00Z",
+        deadline: "2024-03-17T23:59:59Z",
+        pledges: 8
+      },
+      {
+        id: "6",
+        hospitalName: "University Hospital",
+        bloodGroup: "A-",
+        city: "Boston",
+        unitsNeeded: 6,
+        unitsFulfilled: 6,
+        urgencyLevel: "medium",
+        status: "fulfilled",
+        createdAt: "2024-03-11T16:20:00Z",
+        deadline: "2024-03-16T23:59:59Z",
+        pledges: 6
+      },
+      {
+        id: "7",
+        hospitalName: "Community General Hospital",
+        bloodGroup: "B+",
+        city: "Seattle",
+        unitsNeeded: 4,
+        unitsFulfilled: 0,
+        urgencyLevel: "high",
+        status: "pending",
+        createdAt: "2024-03-17T11:15:00Z",
+        deadline: "2024-03-19T23:59:59Z",
+        pledges: 0
+      },
+      {
+        id: "8",
+        hospitalName: "Sacred Heart Medical Center",
+        bloodGroup: "AB-",
+        city: "Phoenix",
+        unitsNeeded: 2,
+        unitsFulfilled: 1,
+        urgencyLevel: "medium",
+        status: "pending",
+        createdAt: "2024-03-13T13:45:00Z",
+        deadline: "2024-03-21T23:59:59Z",
+        pledges: 1
+      },
+      {
+        id: "9",
+        hospitalName: "Veterans Medical Center",
+        bloodGroup: "O-",
+        city: "Denver",
+        unitsNeeded: 12,
+        unitsFulfilled: 4,
+        urgencyLevel: "critical",
+        status: "pending",
+        createdAt: "2024-03-15T14:20:00Z",
+        deadline: "2024-03-18T23:59:59Z",
+        pledges: 3
+      }
   ];
 
   const bloodGroups = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];

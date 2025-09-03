@@ -64,11 +64,151 @@ const DonorDirectory = () => {
       lastDonated: "2023-12-10",
       available: true,
       donationCount: 6
+    },
+    {
+      id: "5",
+      name: "David Wilson",
+      bloodGroup: "O-",
+      city: "Phoenix",
+      phone: "+1 (555) 345-6789",
+      lastDonated: "2024-01-08",
+      available: true,
+      donationCount: 18
+    },
+    {
+      id: "6",
+      name: "Jessica Martinez",
+      bloodGroup: "A+",
+      city: "Philadelphia",
+      phone: "+1 (555) 567-8901",
+      lastDonated: "2024-03-05",
+      available: false,
+      donationCount: 9
+    },
+    {
+      id: "7",
+      name: "Robert Garcia",
+      bloodGroup: "B-",
+      city: "San Antonio",
+      phone: "+1 (555) 678-9012",
+      lastDonated: "2023-10-22",
+      available: true,
+      donationCount: 22
+    },
+    {
+      id: "8",
+      name: "Lisa Thompson",
+      bloodGroup: "AB+",
+      city: "San Diego",
+      phone: "+1 (555) 789-0123",
+      lastDonated: "2024-02-14",
+      available: true,
+      donationCount: 11
+    },
+    {
+      id: "9",
+      name: "Christopher Lee",
+      bloodGroup: "O+",
+      city: "Dallas",
+      phone: "+1 (555) 890-1234",
+      lastDonated: "2024-01-30",
+      available: true,
+      donationCount: 14
+    },
+    {
+      id: "10",
+      name: "Amanda Rodriguez",
+      bloodGroup: "A-",
+      city: "Austin",
+      phone: "+1 (555) 901-2345",
+      lastDonated: "2023-09-15",
+      available: true,
+      donationCount: 16
+    },
+    {
+      id: "11",
+      name: "James Anderson",
+      bloodGroup: "B+",
+      city: "Jacksonville",
+      phone: "+1 (555) 012-3456",
+      lastDonated: "2024-02-20",
+      available: false,
+      donationCount: 7
+    },
+    {
+      id: "12",
+      name: "Nicole White",
+      bloodGroup: "AB-",
+      city: "San Francisco",
+      phone: "+1 (555) 123-4567",
+      lastDonated: "2023-12-08",
+      available: true,
+      donationCount: 13
+    },
+    {
+      id: "13",
+      name: "Kevin Taylor",
+      bloodGroup: "O-",
+      city: "Columbus",
+      phone: "+1 (555) 234-5678",
+      lastDonated: "2024-01-12",
+      available: true,
+      donationCount: 25
+    },
+    {
+      id: "14",
+      name: "Michelle Clark",
+      bloodGroup: "A+",
+      city: "Fort Worth",
+      phone: "+1 (555) 345-6789",
+      lastDonated: "2024-03-01",
+      available: false,
+      donationCount: 5
+    },
+    {
+      id: "15",
+      name: "Daniel Lewis",
+      bloodGroup: "B-",
+      city: "Charlotte",
+      phone: "+1 (555) 456-7890",
+      lastDonated: "2023-11-05",
+      available: true,
+      donationCount: 19
+    },
+    {
+      id: "16",
+      name: "Rachel Walker",
+      bloodGroup: "AB+",
+      city: "Seattle",
+      phone: "+1 (555) 567-8901",
+      lastDonated: "2024-02-18",
+      available: true,
+      donationCount: 8
+    },
+    {
+      id: "17",
+      name: "Matthew Hall",
+      bloodGroup: "O+",
+      city: "Denver",
+      phone: "+1 (555) 678-9012",
+      lastDonated: "2024-01-25",
+      available: true,
+      donationCount: 17
+    },
+    {
+      id: "18",
+      name: "Stephanie Young",
+      bloodGroup: "A-",
+      city: "Boston",
+      phone: "+1 (555) 789-0123",
+      lastDonated: "2023-12-03",
+      available: true,
+      donationCount: 12
     }
   ];
 
   const bloodGroups = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];
-  const cities = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix", "Philadelphia"];
+  const cities = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix", "Philadelphia", "San Antonio", "San Diego", "Dallas", "Austin", "Jacksonville", "San Francisco", "Columbus", "Fort Worth", "Charlotte", "Seattle", "Denver", "Boston"];
 
   const filteredDonors = donors.filter(donor => {
     const matchesSearch = donor.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
